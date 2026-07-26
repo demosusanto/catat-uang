@@ -1,0 +1,86 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0.16px;
+  cursor: pointer;
+  transition: all 200ms ease;
+  white-space: nowrap;
+}
+
+/* Primary (Yellow Fill) */
+.btn-primary {
+  background-color: var(--binance-yellow);
+  color: var(--ink);
+  border: none;
+  border-radius: var(--radius-6);
+  padding: 6px 32px;
+}
+
+.btn-primary:hover {
+  background-color: var(--focus-blue);
+  color: var(--pure-white);
+}
+
+.btn-primary:active {
+  background-color: var(--active-yellow);
+}
+
+.btn-primary:focus-visible {
+  background-color: var(--focus-blue);
+  outline: 2px solid #000;
+  outline-offset: 1px;
+  opacity: 0.9;
+}
+
+/* Primary Pill (Gold) */
+.btn-primary-pill {
+  background-color: var(--binance-gold);
+  color: var(--pure-white);
+  border: 1px solid var(--binance-gold);
+  border-radius: var(--radius-50);
+  padding: 10px 32px;
+  box-shadow: var(--shadow-pill);
+}
+
+.btn-primary-pill:hover {
+  background-color: var(--light-gold);
+  border-color: var(---light-gold);
+  color: var(--pure-white);
+}
+
+/* Secondary (White Outlined) */
+.btn-secondary {
+  background-color: var(--pure-white);
+  color: var(--binance-yellow);
+  border: 1px solid var(--binance-yellow);
+  border-radius: var(--radius-50);
+  padding: 10px 32px;
+  box-shadow: var(--shadow-pill);
+}
+
+.btn-secondary:hover {
+  background-color: var(--focus-blue);
+  color: var(--pure-white);
+  border-color: var(--focus-blue);
+}
+
+.btn-hover:hover {
+  background-color: var(--light-gold);
+  color: var(--pure-white);
+  border-color: var(--light-gold);
+}
+
+
+/* Disabled State */
+.btn:disabled {
+  background-color: var(--border-light);
+  color: var(--slate);
+  cursor: not-allowed;
+  box-shadow: none;
+  border: none;
+}
