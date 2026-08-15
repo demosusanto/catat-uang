@@ -3,28 +3,30 @@ import './Why.css';
 import {
     ChevronsUp, UserKey, GlobeOff, Gift
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Why = () => {
+    const { t } = useTranslation();
     const whyList = [
         {
             icon: <ChevronsUp size={24} color="var(--pure-white)" />,
-            title: "Ringan & Cepat",
-            description: "Tidak perlu login, langsung pakai. Aplikasi berukuran kecil dan responsif."
+            title: t('why.items.0.title'),
+            description: t('why.items.0.description')
         },
         {
             icon: <UserKey size={24} color="var(--pure-white)" />,
-            title: "100% Privat",
-            description: "Data tersimpan di perangkat. Tidak ada server yang menyimpan datamu."
+            title: t('why.items.1.title'),
+            description: t('why.items.1.description')
         },
         {
             icon: <GlobeOff size={24} color="var(--pure-white)" />,
-            title: "Bisa Offline",
-            description: "Tidak perlu internet untuk mencatat. Cocok di mana saja, kapan saja."
+            title: t('why.items.2.title'),
+            description: t('why.items.2.description')
         },
         {
             icon: <Gift size={24} color="var(--pure-white)" />,
-            title: "Gratis Selamanya",
-            description: "Fitur utama gratis tanpa batas. Premium hanya untuk menghilangkan iklan."
+            title: t('why.items.3.title'),
+            description: t('why.items.3.description')
         }
     ];
 
@@ -33,10 +35,10 @@ const Why = () => {
             <div className="container-why">
                 <div className="why-header">
                     <h2 className="text-display-secondary">
-                        Kenapa <span className="text-accent">Catat Uang</span>?
+                        {t('why.title1')}<span className="text-accent">{t('why.title2')}</span>{t('why.title3')}
                     </h2>
                     <p className="text-body-large why-subtitle">
-                        Dibuat untuk siapa saja yang ingin mulai mengatur keuangan tanpa ribet.
+                        {t('why.subtitle')}
                     </p>
                 </div>
 

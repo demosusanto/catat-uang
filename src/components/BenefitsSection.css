@@ -1,0 +1,114 @@
+.benefits-section {
+    background-color: var(--pure-white);
+    color: var(--ink);
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    scroll-margin-top: 50px;
+}
+
+.benefits-container {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.benefits-header {
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.benefits-main-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #f1f1f1;
+}
+
+.benefits-subtitle {
+    font-size: 15px;
+    color: #9e9e9e;
+    margin: 0;
+}
+
+/* Layout Grid untuk Desktop */
+.benefits-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Card Style */
+.benefit-card {
+    background-color: var(--pure-white);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    border: 1px solid var(--binance-yellow);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.benefit-card:hover {
+    background-color: #30c07f1a;
+}
+
+.benefit-icon-wrapper {
+    background-color: var(--binance-yellow);
+    min-width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.benefit-icon-wrapper svg {
+    width: 22px;
+    height: 22px;
+}
+
+
+/* Konten Teks */
+.benefit-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.benefit-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    color: var(--ink);
+    line-height: 1.3;
+}
+
+.benefit-desc {
+    font-size: 14px;
+    color: var(--slate);
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+/* Tablet */
+@media (min-width: 768px) {
+    .benefits-header {
+        text-align: center;
+    }
+
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

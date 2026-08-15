@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "features": "Fitur",
+    "why": "Kenapa Catat Uang",
+    "suitable": "Cocok Untuk",
+    "pricing": "Langganan",
+    "benefits": "Benefits",
+    "testimonials": "Testimoni"
+  },
+  "hero": {
+    "badge": "🚀 Gratis & Tanpa Login",
+    "title1": "Kelola Keuangan ",
+    "title2": "Lebih Pintar",
+    "subtitle": "Catat pengeluaran, pemasukan, dan atur budget harian dengan mudah. Didukung AI untuk input transaksi lebih cepat.",
+    "playStore": "Download di Google Play",
+    "appStore": "Download di App Store",
+    "stats": "Tersedia di Android & iOS • 5.000+ download"
+  },
+  "features": {
+    "title1": "Fitur Lengkap untuk ",
+    "title2": "Keuanganmu",
+    "subtitle": "Semua yang kamu butuhkan untuk mengelola keuangan harian, dalam satu aplikasi ringan.",
+    "items": [
+      { "title": "AI Input Chat", "description": "Catat transaksi cukup dengan mengetik seperti chat biasa." },
+      { "title": "Input Suara", "description": "Bicara langsung, AI yang menerjemahkan jadi transaksi." },
+      { "title": "Scan Nota", "description": "Foto struk belanja, otomatis tercatat di aplikasi." },
+      { "title": "Grafik Keuangan", "description": "Pantau pengeluaran & pemasukan lewat grafik visual." },
+      { "title": "Laporan Lengkap", "description": "Report harian, bulanan, dan tahunan siap kapan saja." },
+      { "title": "Insight Otomatis", "description": "AI memberikan insight soal kebiasaan pengeluaranmu." },
+      { "title": "Budget Bulanan", "description": "Atur budget per kategori setiap bulan." },
+      { "title": "Budget Custom", "description": "Buat budget dengan tanggal mulai fleksibel." },
+      { "title": "Reminder Harian", "description": "Pengingat untuk catat transaksi setiap hari." },
+      { "title": "Backup Google Drive", "description": "Data aman di cloud, bisa restore kapan saja." },
+      { "title": "Export PDF & Excel", "description": "Download laporan untuk arsip pribadi atau usaha." },
+      { "title": "Private & Aman", "description": "Tanpa login, offline, dilindungi PIN & biometrik." }
+    ]
+  },
+  "why": {
+    "title1": "Kenapa ",
+    "title2": "Catat Uang",
+    "title3": "?",
+    "subtitle": "Dibuat untuk siapa saja yang ingin mulai mengatur keuangan tanpa ribet.",
+    "items": [
+      { "title": "Ringan & Cepat", "description": "Tidak perlu login, langsung pakai. Aplikasi berukuran kecil dan responsif." },
+      { "title": "100% Privat", "description": "Data tersimpan di perangkat. Tidak ada server yang menyimpan datamu." },
+      { "title": "Bisa Offline", "description": "Tidak perlu internet untuk mencatat. Cocok di mana saja, kapan saja." },
+      { "title": "Gratis Selamanya", "description": "Fitur utama gratis tanpa batas. Premium hanya untuk menghilangkan iklan." }
+    ]
+  },
+  "suitable": {
+    "title1": "Cocok untuk ",
+    "title2": "Siapa Saja",
+    "subtitle": "Mulai kendalikan arus kas Kamu, apa pun profesi Kamu.",
+    "items": [
+      { "title": "Pekerja", "description": "Yang ingin lebih hemat dan tahu ke mana uang pergi." },
+      { "title": "Mahasiswa", "description": "Kontrol uang jajan dan belajar kelola keuangan sejak dini." },
+      { "title": "Ibu Rumah Tangga", "description": "Mengatur keuangan keluarga dengan rapi dan terstruktur." },
+      { "title": "Freelancer & UMKM", "description": "Catat keuangan usaha kecil dengan laporan siap export." }
+    ]
+  },
+  "download": {
+    "title1": "Mulai ",
+    "title2": "Catat Keuanganmu",
+    "title3": " Sekarang",
+    "subtitle": "Catat uang masuk & keluar = hidup lebih terarah. Install sekarang dan kendalikan keuanganmu.",
+    "getItOn": "GET IT ON",
+    "downloadOnThe": "Download on the",
+    "scanToDownload": "Scan to Download"
+  },
+  "pricing": {
+    "title1": "Catat Uang ",
+    "title2": "Premium",
+    "subtitle": "Pilih paket sesuai kebutuhanmu.",
+    "alert": "Silahkan ke Google Play atau App Store untuk langganan ",
+    "modalTitle": "Pembayaran QRIS",
+    "modalDesc1": "Selesaikan pembayaran untuk paket ",
+    "modalDesc2": " senilai",
+    "modalInstruction": "Silakan scan kode QRIS di atas menggunakan aplikasi M-Banking atau E-Wallet Anda (Gopay, OVO, Dana, dll).",
+    "modalBtn": "Saya Sudah Bayar",
+    "waMessage": "Halo Admin Catat Uang 👋,\n\nSaya sudah melakukan pembayaran QRIS untuk langganan Premium paket *{{plan}}*. Berikut saya lampirkan bukti transfernya:",
+    "plans": [
+      { "title": "Bulanan Manual", "desc": "Pembayaran melalui QRIS atau Transfer", "smallText": "", "period": "/bulan" },
+      { "title": "6 Bulan Manual", "desc": "Pembayaran melalui QRIS atau Transfer", "smallText": "", "period": "/premium.6 bulan" },
+      { "title": "Tahunan Manual", "desc": "Pembayaran melalui QRIS atau Transfer", "smallText": "Rp8,333.33/bulan", "period": "/tahun" },
+      { "title": "Bulanan", "desc": "Pembelian melalui Play Store atau App Store", "smallText": "", "period": "/bulan" },
+      { "title": "Tahunan", "desc": "Pembelian melalui Play Store atau App Store", "smallText": "Rp11,666.67/bulan", "period": "/tahun" }
+    ]
+  },
+  "benefits": {
+    "title1": "Catat Uang ",
+    "title2": "Benefits",
+    "subtitle": "Keuntungan menjadi member Catat Uang Premium.",
+    "items": [
+      { "title": "Tanpa Iklan", "desc": "Nikmati pengalaman mencatat keuangan tanpa gangguan iklan sama sekali." },
+      { "title": "Unlock Fitur Instan", "desc": "Akses semua fitur tanpa perlu menonton iklan terlebih dahulu." },
+      { "title": "Export Laporan PDF", "desc": "Unduh laporan keuangan dalam format PDF untuk kebutuhan pribadi atau pekerjaan." },
+      { "title": "Export Excel / CSV", "desc": "Ekspor data transaksi ke Excel atau CSV untuk analisis lebih lanjut." },
+      { "title": "Grafik & Analisis Lanjutan", "desc": "Dapatkan insight pengeluaran dan pemasukan dengan grafik dan analisis yang lebih detail." },
+      { "title": "Custom Kategori Tanpa Batas", "desc": "Buat kategori pengeluaran dan pemasukan sesuai kebutuhan tanpa batasan." },
+      { "title": "Multiple Wallet / Akun", "desc": "Kelola lebih dari satu dompet atau rekening dalam satu aplikasi." },
+      { "title": "Budget per Kategori", "desc": "Atur batas pengeluaran per kategori dan pantau realisasinya." },
+      { "title": "Backup Cloud", "desc": "Data keuangan kamu tersimpan aman dengan sinkronisasi cloud." },
+      { "title": "Pengingat Pintar", "desc": "Aktifkan reminder untuk mencatat transaksi atau tagihan rutin." },
+      { "title": "Keamanan Face ID / Fingerprint", "desc": "Lindungi data keuangan kamu dengan autentikasi biometrik." },
+      { "title": "Tema Eksklusif Premium", "desc": "Nikmati tampilan aplikasi dengan tema dan warna eksklusif khusus member premium." },
+      { "title": "Badge Premium Member", "desc": "Dapatkan badge khusus sebagai tanda dukungan dan komitmen kamu dalam mengatur keuangan." }
+    ]
+  },
+  "testimonials": {
+    "title": "Udah Banyak yang Ngebuktiin, Kamu Kapan?",
+    "subtitle": "Cerita jujur dari teman-teman yang keuangannya jadi lebih rapi berkat Catat Uang."
+  },
+  "footer": {
+    "waMessage": "Hi Admin Catat Uang 👋",
+    "tagline": "Kelola Keuangan Lebih Pintar.",
+    "rights": "All rights reserved."
+  }
+}

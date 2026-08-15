@@ -1,0 +1,49 @@
+/* FloatingWhatsApp.css */
+.floating-wa-button {
+    position: fixed;
+    bottom: 30px;
+    /* Jarak dari bawah */
+    right: 30px;
+    /* Jarak dari kanan */
+    background-color: #25d366;
+    /* Warna hijau khas WhatsApp */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    /* Agar selalu berada di paling atas elemen lain */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek saat tombol di-hover (disentuh mouse) */
+.floating-wa-button:hover {
+    transform: translateY(-5px);
+    /* Sedikit terangkat */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.wa-icon-float {
+    width: 32px;
+    height: 32px;
+    /* Jika icon SVG Anda berwarna hitam/warna lain dan ingin diubah jadi putih: */
+    filter: brightness(0) invert(1);
+}
+
+/* Responsif untuk layar HP yang lebih kecil */
+@media (max-width: 768px) {
+    .floating-wa-button {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .wa-icon-float {
+        width: 28px;
+        height: 28px;
+    }
+}

@@ -1,0 +1,42 @@
+/* ScrollToTop.css */
+.scroll-to-top-btn {
+    position: fixed;
+    /* Jaraknya 100px agar letaknya di atas tombol WA (jika tombol WA ada di bottom 30px) */
+    bottom: 110px;
+    right: 30px;
+    background-color: #E22B29;
+    /* Disesuaikan dengan warna merah tema "Catat Uang" */
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.9;
+}
+
+/* Efek saat kursor diarahkan ke tombol */
+.scroll-to-top-btn:hover {
+    background-color: #c01b1a;
+    /* Warna merah sedikit lebih gelap */
+    transform: translateY(-5px);
+    /* Efek terangkat */
+    opacity: 1;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    .scroll-to-top-btn {
+        bottom: 85px;
+        /* Jarak untuk layar kecil, sesuaikan dengan WA */
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+}

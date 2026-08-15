@@ -159,3 +159,40 @@
     display: none;
   }
 }
+
+.lang-switcher-flags {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--surface-light);
+  border: 1px solid var(--border-light);
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+
+.lang-btn.active {
+  opacity: 1;
+  filter: grayscale(0%);
+  background: var(--pure-white);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.flag-style {
+  border: 1px solid var(--ink);
+  width: 25px;
+  height: 15px;
+}

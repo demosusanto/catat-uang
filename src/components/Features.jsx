@@ -6,68 +6,70 @@ import {
   Calendar, CalendarCog, CalendarDays,
   CloudBackup, Download, ShieldCheck
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Features = () => {
+  const { t } = useTranslation();
   const featureList = [
     {
       icon: <MessageSquare size={32} color="var(--binance-yellow)" />,
-      title: "AI Input Chat",
-      description: "Catat transaksi cukup dengan mengetik seperti chat biasa."
+      title: t('features.items.0.title'),
+      description: t('features.items.0.description')
     },
     {
       icon: <Mic size={32} color="var(--binance-yellow)" />,
-      title: "Input Suara",
-      description: "Bicara langsung, AI yang menerjemahkan jadi transaksi."
+      title: t('features.items.1.title'),
+      description: t('features.items.1.description')
     },
     {
       icon: <Scan size={32} color="var(--binance-yellow)" />,
-      title: "Scan Nota",
-      description: "Foto struk belanja, otomatis tercatat di aplikasi."
+      title: t('features.items.2.title'),
+      description: t('features.items.2.description')
     },
     {
       icon: <ChartNoAxesCombined size={32} color="var(--binance-yellow)" />,
-      title: "Grafik Keuangan",
-      description: "Pantau pengeluaran & pemasukan lewat grafik visual."
+      title: t('features.items.3.title'),
+      description: t('features.items.3.description')
     },
     {
       icon: <FileText size={32} color="var(--binance-yellow)" />,
-      title: "Laporan Lengkap",
-      description: "Report harian, bulanan, dan tahunan siap kapan saja."
+      title: t('features.items.4.title'),
+      description: t('features.items.4.description')
     },
     {
       icon: <Brain size={32} color="var(--binance-yellow)" />,
-      title: "Insight Otomatis",
-      description: "AI memberikan insight soal kebiasaan pengeluaranmu."
+      title: t('features.items.5.title'),
+      description: t('features.items.5.description')
     },
     {
       icon: <Calendar size={32} color="var(--binance-yellow)" />,
-      title: "Budget Bulanan",
-      description: "Atur budget per kategori setiap bulan."
+      title: t('features.items.6.title'),
+      description: t('features.items.6.description')
     },
     {
       icon: <CalendarCog size={32} color="var(--binance-yellow)" />,
-      title: "Budget Custom",
-      description: "Buat budget dengan tanggal mulai fleksibel."
+      title: t('features.items.7.title'),
+      description: t('features.items.7.description')
     },
     {
       icon: <CalendarDays size={32} color="var(--binance-yellow)" />,
-      title: "Reminder Harian",
-      description: "Pengingat untuk catat transaksi setiap hari."
+      title: t('features.items.8.title'),
+      description: t('features.items.8.description')
     },
     {
       icon: <CloudBackup size={32} color="var(--binance-yellow)" />,
-      title: "Backup Google Drive",
-      description: "Data aman di cloud, bisa restore kapan saja."
+      title: t('features.items.9.title'),
+      description: t('features.items.9.description')
     },
     {
       icon: <Download size={32} color="var(--binance-yellow)" />,
-      title: "Export PDF & Excel",
-      description: "Download laporan untuk arsip pribadi atau usaha."
+      title: t('features.items.10.title'),
+      description: t('features.items.10.description')
     },
     {
       icon: <ShieldCheck size={32} color="var(--binance-yellow)" />,
-      title: "Private & Aman",
-      description: "Tanpa login, offline, dilindungi PIN & biometrik."
+      title: t('features.items.11.title'),
+      description: t('features.items.11.description')
     }
   ];
 
@@ -75,9 +77,9 @@ const Features = () => {
     <section className="section-dark features-section" id="fitur">
       <div className="container">
         <div className="features-header">
-          <h2 className="text-display-secondary">Fitur Lengkap untuk <span className="text-accent">Keuanganmu</span></h2>
+          <h2 className="text-display-secondary">{t('features.title1')}<span className="text-accent">{t('features.title2')}</span></h2>
           <p className="text-body-large features-subtitle">
-            Semua yang kamu butuhkan untuk mengelola keuangan harian, dalam satu aplikasi ringan.
+            {t('features.subtitle')}
           </p>
         </div>
 

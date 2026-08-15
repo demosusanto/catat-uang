@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "features": "Features",
+    "why": "Why Catat Uang",
+    "suitable": "Suitable For",
+    "pricing": "Pricing",
+    "benefits": "Benefits",
+    "testimonials": "Testimonials"
+  },
+  "hero": {
+    "badge": "🚀 Free & No Login",
+    "title1": "Manage Finances ",
+    "title2": "Smarter",
+    "subtitle": "Track expenses, income, and manage daily budget easily. AI-powered for faster transaction input.",
+    "playStore": "Download on Google Play",
+    "appStore": "Download on App Store",
+    "stats": "Available on Android & iOS • 5,000+ downloads"
+  },
+  "features": {
+    "title1": "Complete Features for ",
+    "title2": "Your Finances",
+    "subtitle": "Everything you need to manage daily finances, in one lightweight app.",
+    "items": [
+      { "title": "AI Input Chat", "description": "Record transactions just by typing like a normal chat." },
+      { "title": "Voice Input", "description": "Speak directly, AI translates it into transactions." },
+      { "title": "Receipt Scan", "description": "Photo of shopping receipts, automatically recorded in the app." },
+      { "title": "Financial Charts", "description": "Monitor expenses & income through visual charts." },
+      { "title": "Complete Reports", "description": "Daily, monthly, and yearly reports ready anytime." },
+      { "title": "Automated Insights", "description": "AI provides insights about your spending habits." },
+      { "title": "Monthly Budget", "description": "Set budget per category every month." },
+      { "title": "Custom Budget", "description": "Create budget with flexible start dates." },
+      { "title": "Daily Reminders", "description": "Reminders to record transactions every day." },
+      { "title": "Google Drive Backup", "description": "Data is safe in the cloud, can be restored anytime." },
+      { "title": "Export PDF & Excel", "description": "Download reports for personal or business archives." },
+      { "title": "Private & Secure", "description": "No login, offline, protected by PIN & biometrics." }
+    ]
+  },
+  "why": {
+    "title1": "Why ",
+    "title2": "Catat Uang",
+    "title3": "?",
+    "subtitle": "Made for anyone who wants to start managing finances without hassle.",
+    "items": [
+      { "title": "Light & Fast", "description": "No login required, use instantly. Small and responsive app size." },
+      { "title": "100% Private", "description": "Data is stored on device. No servers store your data." },
+      { "title": "Offline Support", "description": "No internet needed to record. Suitable anywhere, anytime." },
+      { "title": "Free Forever", "description": "Main features are free unlimited. Premium is only to remove ads." }
+    ]
+  },
+  "suitable": {
+    "title1": "Suitable for ",
+    "title2": "Anyone",
+    "subtitle": "Start taking control of your cash flow, whatever your profession.",
+    "items": [
+      { "title": "Employee", "description": "Who wants to be more frugal and know where the money goes." },
+      { "title": "Student", "description": "Control pocket money and learn to manage finances early on." },
+      { "title": "Housewife", "description": "Manage family finances neatly and structurally." },
+      { "title": "Freelancer & SME", "description": "Record small business finances with export-ready reports." }
+    ]
+  },
+  "download": {
+    "title1": "Start ",
+    "title2": "Tracking Your Finances",
+    "title3": " Now",
+    "subtitle": "Track money in & out = a more directed life. Install now and take control of your finances.",
+    "getItOn": "GET IT ON",
+    "downloadOnThe": "Download on the",
+    "scanToDownload": "Scan to Download"
+  },
+  "pricing": {
+    "title1": "Catat Uang ",
+    "title2": "Premium",
+    "subtitle": "Choose a plan that fits your needs.",
+    "alert": "Please go to Google Play or App Store to subscribe to ",
+    "modalTitle": "QRIS Payment",
+    "modalDesc1": "Complete payment for the plan ",
+    "modalDesc2": " worth",
+    "modalInstruction": "Please scan the QRIS code above using your M-Banking or E-Wallet app (Gopay, OVO, Dana, etc).",
+    "modalBtn": "I Have Paid",
+    "waMessage": "Hello Catat Uang Admin 👋,\n\nI have made a QRIS payment for the Premium subscription plan *{{plan}}*. Here is the proof of transfer:",
+    "plans": [
+      { "title": "Monthly Manual", "desc": "Payment via QRIS or Transfer", "smallText": "", "period": "/month" },
+      { "title": "6 Months Manual", "desc": "Payment via QRIS or Transfer", "smallText": "", "period": "/premium.6 months" },
+      { "title": "Yearly Manual", "desc": "Payment via QRIS or Transfer", "smallText": "Rp8,333.33/month", "period": "/year" },
+      { "title": "Monthly", "desc": "Purchase via Play Store or App Store", "smallText": "", "period": "/month" },
+      { "title": "Yearly", "desc": "Purchase via Play Store or App Store", "smallText": "Rp11,666.67/month", "period": "/year" }
+    ]
+  },
+  "benefits": {
+    "title1": "Catat Uang ",
+    "title2": "Benefits",
+    "subtitle": "Benefits of becoming a Catat Uang Premium member.",
+    "items": [
+      { "title": "Ad-Free", "desc": "Enjoy tracking finances without any ad interruptions." },
+      { "title": "Instant Feature Unlock", "desc": "Access all features without needing to watch ads first." },
+      { "title": "Export PDF Reports", "desc": "Download financial reports in PDF format for personal or work needs." },
+      { "title": "Export Excel / CSV", "desc": "Export transaction data to Excel or CSV for further analysis." },
+      { "title": "Advanced Charts & Analysis", "desc": "Get spending and income insights with more detailed charts and analysis." },
+      { "title": "Unlimited Custom Categories", "desc": "Create spending and income categories as needed without limits." },
+      { "title": "Multiple Wallets / Accounts", "desc": "Manage more than one wallet or account in one application." },
+      { "title": "Budget per Category", "desc": "Set spending limits per category and monitor their realization." },
+      { "title": "Cloud Backup", "desc": "Your financial data is securely stored with cloud synchronization." },
+      { "title": "Smart Reminders", "desc": "Enable reminders to record routine transactions or bills." },
+      { "title": "Face ID / Fingerprint Security", "desc": "Protect your financial data with biometric authentication." },
+      { "title": "Exclusive Premium Themes", "desc": "Enjoy the application appearance with exclusive themes and colors for premium members." },
+      { "title": "Premium Member Badge", "desc": "Get a special badge as a sign of your support and commitment in managing finances." }
+    ]
+  },
+  "testimonials": {
+    "title": "Many Have Proven It, When Will You?",
+    "subtitle": "Honest stories from friends whose finances are neater thanks to Catat Uang."
+  },
+  "footer": {
+    "waMessage": "Hi Catat Uang Admin 👋",
+    "tagline": "Manage Finances Smarter.",
+    "rights": "All rights reserved."
+  }
+}

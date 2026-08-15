@@ -7,6 +7,11 @@ import Why from './components/Why';
 import Suitable from './components/Suitable';
 import AppDownload from './components/AppDownload';
 import Footer from './components/Footer';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
+import ScrollToTop from './components/ScrollToTop';
+import PricingSection from './components/PricingSection';
+import BenefitsSection from './components/BenefitsSection';
+import TestimonialSection from './components/TestimonialSection';
 
 function App() {
   return (
@@ -19,8 +24,13 @@ function App() {
         <Why />
         <Suitable />
         <AppDownload />
+        <PricingSection />
+        <BenefitsSection />
+        <TestimonialSection />
       </main>
       <Footer />
+      <FloatingWhatsApp />
+      <ScrollToTop />
     </div>
   );
 }

@@ -1,0 +1,290 @@
+.pricing-section {
+    background-color: var(--binance-dark);
+    color: var(--pure-white);
+    padding: 60px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    scroll-margin-top: 50px;
+}
+
+.pricing-container {
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Header Styles */
+.pricing-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.check-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.check-icon {
+    width: 60px;
+    height: 60px;
+    color: var(--binance-yellow);
+}
+
+.pricing-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #f1f1f1;
+}
+
+.pricing-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+/* Grid & Layouting */
+.pricing-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Card Styles */
+.pricing-card {
+    background-color: var(--dark-card);
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+    background-color: #252525;
+}
+
+/* Active/Selected State (Garis hijau) */
+.pricing-card.selected {
+    border: 1px solid var(--binance-yellow);
+}
+
+/* Card Content Left */
+.card-left {
+    flex: 1;
+    padding-right: 15px;
+}
+
+.plan-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+    color: #f5f5f5;
+}
+
+.plan-desc {
+    font-size: 13px;
+    color: #9e9e9e;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Card Content Right */
+.card-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    min-width: 140px;
+}
+
+.plan-small-text {
+    font-size: 12px;
+    color: #888888;
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+.plan-strike {
+    font-size: 14px;
+    color: #888888;
+    text-decoration: line-through;
+    margin-bottom: 4px;
+}
+
+.plan-price-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.plan-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--binance-yellow);
+}
+
+.plan-period {
+    font-size: 12px;
+    color: #9e9e9e;
+}
+
+/* Responsivitas: Tampilan Desktop (Layar Lebar) */
+@media (min-width: 768px) {
+    .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .pricing-subtitle {
+        text-align: center;
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+.modal-content {
+    background-color: #1E1E1E;
+    border: 1px solid #333;
+    width: 90%;
+    max-width: 550px;
+    border-radius: 16px;
+    padding: 32px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    animation: slideUp 0.3s ease-in-out;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.modal-close:hover {
+    color: #fff;
+}
+
+.modal-title {
+    color: #f1f1f1;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.modal-desc {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.modal-highlight-price {
+    color: var(--binance-yellow);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.qris-image-container {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.qris-image {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.modal-instruction {
+    color: #9e9e9e;
+    font-size: 13px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.modal-action-btn {
+    background-color: var(--binance-yellow);
+    color: #121212;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.modal-action-btn:hover {
+    background-color: var(--binance-yellow);
+}
+
+/* Keyframes untuk Animasi Kemunculan Modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsif untuk HP dengan layar kecil sekali */
+@media (max-width: 380px) {
+    .modal-content {
+        padding: 20px 15px;
+    }
+
+    .qris-image {
+        max-width: 220px;
+    }
+}

@@ -3,28 +3,30 @@ import './Suitable.css';
 import {
     Briefcase, GraduationCap, Home, Store
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Suitable = () => {
+    const { t } = useTranslation();
     const suitableList = [
         {
             icon: <Briefcase size={24} color="var(--binance-yellow)" />,
-            title: "Pekerja",
-            description: "Yang ingin lebih hemat dan tahu ke mana uang pergi."
+            title: t('suitable.items.0.title'),
+            description: t('suitable.items.0.description')
         },
         {
             icon: <GraduationCap size={24} color="var(--binance-yellow)" />,
-            title: "Mahasiswa",
-            description: "Kontrol uang jajan dan belajar kelola keuangan sejak dini."
+            title: t('suitable.items.1.title'),
+            description: t('suitable.items.1.description')
         },
         {
             icon: <Home size={24} color="var(--binance-yellow)" />,
-            title: "Ibu Rumah Tangga",
-            description: "Mengatur keuangan keluarga dengan rapi dan terstruktur."
+            title: t('suitable.items.2.title'),
+            description: t('suitable.items.2.description')
         },
         {
             icon: <Store size={24} color="var(--binance-yellow)" />,
-            title: "Freelancer & UMKM",
-            description: "Catat keuangan usaha kecil dengan laporan siap export."
+            title: t('suitable.items.3.title'),
+            description: t('suitable.items.3.description')
         }
     ];
 
@@ -33,10 +35,10 @@ const Suitable = () => {
             <div className="container-suitable">
                 <div className="suitable-header">
                     <h2 className="text-display-secondary">
-                        Cocok untuk <span className="text-accent">Siapa Saja</span>
+                        {t('suitable.title1')}<span className="text-accent">{t('suitable.title2')}</span>
                     </h2>
                     <p className="text-body-large suitable-subtitle">
-                        Mulai kendalikan arus kas Anda, apa pun profesi Anda.
+                        {t('suitable.subtitle')}
                     </p>
                 </div>
 

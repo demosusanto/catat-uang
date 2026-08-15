@@ -2,31 +2,33 @@ import React from 'react';
 import './Hero.css';
 import Button from './Button';
 import homescreen from '../assets/home-screen.webp';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <section className="section-light hero-section" id="hero">
       <div className="container hero-container">
         <div className="hero-content">
           <div className="mini-badge">
-            <span className='text-body-small'>🚀 Gratis &amp; Tanpa Login</span>
+            <span className='text-body-small'>{t('hero.badge')}</span>
           </div>
           <h1 className="text-display-hero hero-title">
-            Kelola Keuangan <span className="text-accent">Lebih Pintar</span>
+            {t('hero.title1')}<span className="text-accent">{t('hero.title2')}</span>
           </h1>
           <p className="text-body-large hero-subtitle">
-            Catat pengeluaran, pemasukan, dan atur budget harian dengan mudah. Didukung AI untuk input transaksi lebih cepat.
+            {t('hero.subtitle')}
           </p>
           <div className="hero-actions">
             <Button onClick={() => window.open('https://play.google.com/store/apps/details?id=com.catatuang.android')} variant="primary-pill" className="hero-btn">
-              Download di Google Play
+              {t('hero.playStore')}
             </Button>
             <Button onClick={() => window.open('https://apps.apple.com/eg/app/catat-uang-keuangan-budget/id6759821839')} variant="secondary" className="hero-btn-outline">
-              Download di App Store
+              {t('hero.appStore')}
             </Button>
           </div>
           <div className="text-mini">
-            <span>Tersedia di Android & iOS • 5.000+ download</span>
+            <span>{t('hero.stats')}</span>
           </div>
         </div>
 
