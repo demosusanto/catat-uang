@@ -1,0 +1,422 @@
+.redirection-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0f1318;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-primary, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+}
+
+.redirection-ambient-glow {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(48, 192, 127, 0.18) 0%, rgba(24, 175, 135, 0.05) 50%, transparent 75%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.redirection-header {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.redirection-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.redirection-brand-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.redirection-brand-name {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.redirection-lang-btn {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.redirection-lang-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.redirection-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  position: relative;
+  z-index: 10;
+}
+
+.redirection-card {
+  background: rgba(26, 32, 44, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 40px 32px;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(48, 192, 127, 0.08);
+  animation: cardFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* App Icon & Pulsing Rings */
+.redirection-icon-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.redirection-pulse-ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #30c07f;
+  opacity: 0.8;
+  animation: pulseOut 2.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.redirection-pulse-ring.delay {
+  animation-delay: 1.1s;
+}
+
+@keyframes pulseOut {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+.redirection-icon-box {
+  width: 84px;
+  height: 84px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  border: 1.5px solid rgba(48, 192, 127, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(48, 192, 127, 0.25);
+  position: relative;
+  z-index: 2;
+}
+
+.redirection-app-icon {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+}
+
+/* Status Badge */
+.redirection-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  background: rgba(48, 192, 127, 0.12);
+  border: 1px solid rgba(48, 192, 127, 0.3);
+  color: #30c07f;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.redirection-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #30c07f;
+  box-shadow: 0 0 8px #30c07f;
+  animation: blink 1.5s infinite ease-in-out;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+.redirection-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+.redirection-desc {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #94a3b8;
+  margin-bottom: 28px;
+}
+
+/* Action Buttons */
+.redirection-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.redirection-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 24px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #30c07f 0%, #18af87 100%);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 10px 20px rgba(24, 175, 135, 0.3);
+  transition: all 0.25s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.redirection-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(24, 175, 135, 0.45);
+  background: linear-gradient(135deg, #37d68e 0%, #1bc296 100%);
+}
+
+.redirection-btn-primary:active {
+  transform: translateY(0);
+}
+
+.redirection-btn-arrow {
+  transition: transform 0.2s ease;
+}
+
+.redirection-btn-primary:hover .redirection-btn-arrow {
+  transform: translateX(3px) translateY(-1px);
+}
+
+/* Deep link URL details box */
+.redirection-deeplink-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 14px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.redirection-deeplink-text {
+  font-size: 12px;
+  color: #94a3b8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+  flex: 1;
+}
+
+.redirection-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  color: #38bdf8;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.redirection-copy-btn:hover {
+  background: rgba(56, 189, 248, 0.1);
+}
+
+.redirection-copy-btn .copied {
+  color: #30c07f;
+}
+
+/* Fallback Card */
+.redirection-fallback-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px dashed rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 18px 20px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.redirection-fallback-content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.redirection-fallback-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.redirection-fallback-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.redirection-fallback-subtitle {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.redirection-store-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.redirection-desktop-stores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.redirection-btn-store {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 18px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #f8fafc;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.redirection-btn-store:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.redirection-btn-store.is-primary-store {
+  background: rgba(48, 192, 127, 0.12);
+  border-color: rgba(48, 192, 127, 0.3);
+  color: #30c07f;
+}
+
+.redirection-btn-store.is-primary-store:hover {
+  background: rgba(48, 192, 127, 0.22);
+  border-color: rgba(48, 192, 127, 0.5);
+  color: #4fe59f;
+}
+
+/* Back to Home Link */
+.redirection-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #64748b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.redirection-home-link:hover {
+  color: #30c07f;
+}
+
+.redirection-footer {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 16px;
+  font-size: 12px;
+  color: #475569;
+}
+
+@media (max-width: 480px) {
+  .redirection-header {
+    padding: 16px;
+  }
+
+  .redirection-card {
+    padding: 30px 20px;
+  }
+
+  .redirection-title {
+    font-size: 20px;
+  }
+
+  .redirection-desktop-stores {
+    grid-template-columns: 1fr;
+  }
+}

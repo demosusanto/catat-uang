@@ -114,5 +114,20 @@
     "waMessage": "Hi Catat Uang Admin 👋",
     "tagline": "Manage Finances Smarter.",
     "rights": "All rights reserved."
+  },
+  "redirection": {
+    "status": "Opening Catat Uang...",
+    "title": "Redirecting to App",
+    "desc": "If Catat Uang does not open automatically within a few seconds, please click the button below.",
+    "openAppBtn": "Open in App",
+    "copy": "Copy Link",
+    "copied": "Copied!",
+    "notInstalledTitle": "Don't have Catat Uang installed yet?",
+    "notInstalledSubtitleAndroid": "Download for free on Google Play Store.",
+    "notInstalledSubtitleIos": "Download for free on Apple App Store.",
+    "notInstalledSubtitleGeneral": "Available for free on Google Play Store and App Store.",
+    "downloadPlayStore": "Download on Google Play",
+    "downloadAppStore": "Download on App Store",
+    "backHome": "Back to Home"
   }
 }

@@ -114,5 +114,20 @@
     "waMessage": "Hi Admin Catat Uang 👋",
     "tagline": "Kelola Keuangan Lebih Pintar.",
     "rights": "All rights reserved."
+  },
+  "redirection": {
+    "status": "Membuka Catat Uang...",
+    "title": "Mengalihkan ke Aplikasi",
+    "desc": "Jika aplikasi Catat Uang tidak terbuka secara otomatis dalam beberapa detik, silakan klik tombol di bawah.",
+    "openAppBtn": "Buka di Aplikasi",
+    "copy": "Salin Link",
+    "copied": "Tersalin!",
+    "notInstalledTitle": "Belum punya aplikasi Catat Uang?",
+    "notInstalledSubtitleAndroid": "Download gratis di Google Play Store.",
+    "notInstalledSubtitleIos": "Download gratis di Apple App Store.",
+    "notInstalledSubtitleGeneral": "Tersedia gratis di Google Play Store dan App Store.",
+    "downloadPlayStore": "Download di Google Play",
+    "downloadAppStore": "Download di App Store",
+    "backHome": "Kembali ke Beranda"
   }
 }
